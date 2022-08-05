@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
 }
 :root{
-    --primary-color:#ecb63c;
+    --primary-color:#eeb946 ;
     --black-color:#0E2431;
     --white-color:#fff;
 
@@ -358,18 +358,18 @@ button.close {
   flex: 1 1 auto;
   padding: 4rem 1rem !important;
 }
-.modal-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  pointer-events: auto;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 0 solid rgba(0,0,0,.2);
-  border-radius: 0.75rem !important;
-  outline: 0;
-}
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0 solid rgba(0,0,0,.2);
+    border-radius: 0.75rem !important;
+    outline: 0;
+  }
 .rounded {
   border-radius: 0.5rem!important;
 }
