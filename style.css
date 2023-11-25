@@ -130,7 +130,7 @@ nav.sticky .menu-btn{
 .home{
     height:100vh;
     width:100%;
-    background:url(portfolio-images/portfolio-man1.jpg) no-repeat;
+    background:url(portfolio-images/bannerport.png) no-repeat;
     background-size: cover;
     background-position:center center;
     background-attachment: fixed;
@@ -623,5 +623,14 @@ footer .text span a:hover{
     line-height: 2.5rem;
 }
   }
-          
+  /* new projects */
+ .swither{
+  display: flex;
+  text-align: left;
+  align-items: left;
+ }   
+ .heading_shop{
+  font-size: 36px;
+  font-weight: 600;
+ }      
         
