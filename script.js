@@ -47,4 +47,31 @@ for (var i = 0; i < navLinks.length; i++) {
     menuBtn.style.pointerEvents = "auto";
   });
 }
+// Dynamic date for expirence
+// Function to get the current month and year
+function getCurrentMonthYear() {
+  const now = new Date();
+  return `${now.getFullYear()}-${now.getMonth() + 1}`; // YYYY-MM format
+}
+
+// Function to update the stored experience
+function updateExperience() {
+  const storedData = JSON.parse(localStorage.getItem('experienceData')) || { experience: 4.3, lastUpdated: '' };
+  const currentMonthYear = getCurrentMonthYear();
+
+  if (storedData.lastUpdated !== currentMonthYear) {
+      storedData.experience = parseFloat((storedData.experience + 0.1).toFixed(1)); // Increment by 0.1 for each month
+      storedData.lastUpdated = currentMonthYear;
+      localStorage.setItem('experienceData', JSON.stringify(storedData));
+  }
+
+  return storedData.experience;
+}
+
+// Update the experience in the DOM
+document.addEventListener("DOMContentLoaded", function () {
+  const experienceValue = updateExperience();
+  document.querySelector('.experience .num').textContent = experienceValue;
+});
+
 
