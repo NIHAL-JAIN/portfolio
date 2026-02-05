@@ -69,9 +69,9 @@ function updateExperience() {
 }
 
 // Update the experience in the DOM
-document.addEventListener("DOMContentLoaded", function () {
-  const experienceValue = updateExperience();
-  document.querySelector('.experience .num').textContent = experienceValue;
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   const experienceValue = updateExperience();
+//   document.querySelector('.experience .num').textContent = experienceValue;
+// });
 
 
